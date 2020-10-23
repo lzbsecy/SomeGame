@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JPane1/src/吱吱吱小吱 - 马戏团第二关（钢琴版）（Cover：FC马戏团）.flac&apos; to &apos;bgm.wav&apos;" description="Rename resource &apos;吱吱吱小吱 - 马戏团第二关（钢琴版）（Cover：FC马戏团）.flac&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/吱吱吱小吱 - 马戏团第二关（钢琴版）（Cover：FC马戏团）.flac" name="bgm.wav" stamp="1560870821225" updateReferences="true"/>
+</session>

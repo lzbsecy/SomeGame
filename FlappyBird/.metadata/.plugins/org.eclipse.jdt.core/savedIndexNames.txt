@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+C:\Users\Administrator\Desktop\Java\Bird\.metadata\.plugins\org.eclipse.jdt.core
+176182829.index
+2469691475.index
+637093167.index
+1986664665.index
+1555436229.index
+1477159586.index
+3700916026.index
+2817799417.index
+3306557651.index
+2885562007.index
+1733186536.index
+750971452.index
+1972858555.index
+2932813853.index
+3935953080.index
+2843644660.index
+450913962.index
+2965630762.index
+179894098.index

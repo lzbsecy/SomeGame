@@ -1,0 +1,47 @@
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class Blast {
+
+	
+	int x;
+	int y;
+	int i;
+	BufferedImage blastImage[];
+	BufferedImage blastImageShow;
+	
+	public Blast(int x,int b)
+	{
+		this.x=x;
+		this.y=y;
+		blastImage= new BufferedImage[8];
+		
+    	try {
+			blastImageShow=ImageIO.read(getClass().getResourceAsStream("0.png"));
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    	for(int i=0;i<10;i++) {
+    	try {
+    			blastImage[i]=ImageIO.read(getClass().getResourceAsStream(i+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+	}
+	
+	public void player()
+	{
+		for(int j=0;j<200;j++)
+		{
+			blastImageShow=blastImage[j/20];
+		}
+		blastImage=null;
+	}
+}

@@ -1,0 +1,70 @@
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+
+public class Enemy {
+
+	double x = 460+(int)(Math.random()*300);
+	int y = (int)(Math.random()*400);
+	int i = 0;
+	int j = 0;
+	double width;
+	double height;
+	BufferedImage enemyImage[];
+	BufferedImage enemyImageShow;
+	BufferedImage enemyBoomImage[];
+	BufferedImage enemyBoomImageShow;
+	
+	public Enemy(){
+	 	enemyImage= new BufferedImage[8];
+	 	enemyBoomImage = new BufferedImage[10];
+    	try {
+			enemyImageShow=ImageIO.read(getClass().getResourceAsStream("0.png"));
+			enemyBoomImageShow=ImageIO.read(getClass().getResourceAsStream("0_.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    	for(int i=0;i<10;i++) {
+    	try {
+    		if(i<7)
+    		{
+    			enemyImage[i]=ImageIO.read(getClass().getResourceAsStream(i+".png"));
+    			enemyBoomImage[j]=ImageIO.read(getClass().getResourceAsStream(j+"_"+".png"));
+    		}
+    		else
+    		{
+    			enemyBoomImage[j]=ImageIO.read(getClass().getResourceAsStream(j+"_"+".png"));
+    		}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+}
+	
+	public void move() {
+    	if(enemyImage!=null)
+    	{
+    		x=x-(double)(Math.random()*4);
+        	i++;
+        	j++;
+        	enemyImageShow=enemyImage[i/16];
+        	if(i>=110) {
+        		i=0;
+        	}
+        	}
+    	}
+		
+	public void distory()
+	{
+		for(int j=0;j<200;j++)
+		{
+			enemyBoomImageShow=enemyBoomImage[j/20];
+		}
+		enemyImage = null;
+	}
+}
